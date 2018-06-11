@@ -1,0 +1,65 @@
+$player1Color: limegreen;
+$player2Color: red;
+
+body {
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+  .board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+
+    #score {
+      width: 12%;
+      margin: 0 4% 0 4%;
+      font-size: xx-large;
+
+      #score1 {
+        color: $player1Color;
+      }
+
+      #score2 {
+        color: $player2Color;
+      }
+    }
+    #rest {
+      margin: 0 4% 0 4%;
+      font-size: xx-large;
+      p {
+        #turn {
+          color: $player1Color;
+        }
+        #game {
+
+        }
+      }
+    }
+    #resetButton {
+      margin: 2%;
+      padding: 2% 10% 2% 10%;
+      font-size: x-large;
+    }
+  }
+  .buttons {
+    @extend .board;
+    #rock {
+      margin: 2%;
+      padding: 10%;
+      font-size: x-large;
+    }
+    #paper {
+      @extend #rock;
+    }
+    #scissors {
+      @extend #rock;
+    }
+  }
+  #result {
+    @extend .board;
+    #player {
+
+    }
+  }
+}

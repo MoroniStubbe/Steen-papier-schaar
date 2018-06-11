@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  font-family: sans-serif;
+  color: white; }
+  body .board, body .buttons, body #result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%; }
+    body .board #score, body .buttons #score, body #result #score {
+      width: 12%;
+      margin: 0 4% 0 4%;
+      font-size: xx-large; }
+      body .board #score #score1, body .buttons #score #score1, body #result #score #score1 {
+        color: limegreen; }
+      body .board #score #score2, body .buttons #score #score2, body #result #score #score2 {
+        color: red; }
+    body .board #rest, body .buttons #rest, body #result #rest {
+      margin: 0 4% 0 4%;
+      font-size: xx-large; }
+      body .board #rest p #turn, body .buttons #rest p #turn, body #result #rest p #turn {
+        color: limegreen; }
+    body .board #resetButton, body .buttons #resetButton, body #result #resetButton {
+      margin: 2%;
+      padding: 2% 10% 2% 10%;
+      font-size: x-large; }
+  body .buttons #rock, body .buttons #paper, body .buttons #scissors {
+    margin: 2%;
+    padding: 10%;
+    font-size: x-large; }
+
+/*# sourceMappingURL=style.css.map */

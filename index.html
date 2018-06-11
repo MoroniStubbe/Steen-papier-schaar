@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="board">
+    <select title="select" id="mode" onchange="mode(); reset()">
+        <option value="Player 2">Player 2</option>
+        <option value="Computer">Computer</option>
+    </select>
+    <div id="score">
+        <p><span id="player1">Player 1</span>: <span id="score1">0</span></p>
+        <p><span id="player2">Player 2</span>: <span id="score2">0</span></p>
+    </div>
+    <div id="rest">
+        <p>Turn: <span id="turn">Player 1</span></p>
+        <p>Game: <span id="game">1</span></p>
+    </div>
+    <button id="resetButton" onclick="reset()">Reset</button>
+</div>
+<div class="buttons">
+    <button onclick="rps('rock')" id="rock">Rock</button>
+    <button onclick="rps('paper')" id="paper">Paper</button>
+    <button onclick="rps('scissors')" id="scissors">Scissors</button>
+</div>
+<p id="result"><span id="player"></span></p>
+</body>
+</html>
